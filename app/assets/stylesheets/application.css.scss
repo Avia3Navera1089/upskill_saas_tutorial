@@ -14,7 +14,10 @@
  *= require_self
  */
 
-h1, h2,h3 {
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+h1, h2, h3 {
     font-family: 'Lobster', cursive;
     font-family: 'Playball', cursive;
     font-family: 'Josefin Slab', serif;
