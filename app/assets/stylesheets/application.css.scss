@@ -16,11 +16,12 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 h1, h2, h3 {
-  font-family: 'Lobster', cursive;
-  font-family: 'Playball', cursive;
-  font-family: 'Josefin Slab', serif;
+ 
+  font-family: 'Crete Round', serif;
 }
 
 .home-callout {
@@ -44,21 +45,12 @@ h1, h2, h3 {
   background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
+  &:hover { /* refactored with scss, would not work in plain css*/
+    color: white;
+    opacity: 0.75;
+  }
 }
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  
-}
 
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
-}
