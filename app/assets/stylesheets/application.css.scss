@@ -20,8 +20,8 @@
 @import 'font-awesome';
 
 h1, h2, h3 {
- 
-  font-family: 'Crete Round', serif;
+  //font-family: 'Crete Round', serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .home-callout {
@@ -37,12 +37,18 @@ h1, h2, h3 {
   
 }
 
+/* NAV STYLES */
+
 .navbar,  {
   //Gradient provided bt @_ighosh at uiGradients.co
   border: none;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
@@ -53,4 +59,13 @@ h1, h2, h3 {
   }
 }
 
+.navber-default .navbar-toggle .icon-bar {
+  background: white;
+}
 
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color:  #2196f3;
+  }
+}
