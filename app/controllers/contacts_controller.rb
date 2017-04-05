@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
-  def new
-    @contact = Contact.new
+  def new #checks out new.html.eb
+    @contact = Contact.new #goes to contact.rb in models folder and validates stuff
   end
   
   def create
